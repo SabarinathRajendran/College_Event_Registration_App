@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sabari.hechura.registerpayment">
+
+    <ImageButton
+        android:id="@+id/qrscannerbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_camera"/>
+
+    <ImageButton
+        android:id="@+id/searchbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+    <EditText
+        android:id="@+id/qrresultbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/scrollView2"
+        android:layout_toEndOf="@+id/qrscannerbtn"
+        android:layout_toLeftOf="@+id/searchbtn"
+        android:layout_toRightOf="@+id/qrscannerbtn"
+        android:layout_toStartOf="@+id/searchbtn"
+        android:ems="10"
+        android:hint="QR code"
+        android:inputType="textPersonName" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/qrscannerbtn">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/college3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="College"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/dept3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Department"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/year3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Year"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/email3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/phone3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Phone number"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/paymentfield"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="payment" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Technical events" />
+
+            <CheckBox
+                android:id="@+id/paperbox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Paper Presentation" />
+
+            <CheckBox
+                android:id="@+id/bugBox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Work the bugs out of" />
+
+            <CheckBox
+                android:id="@+id/quizBox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quizoholic" />
+
+            <CheckBox
+                android:id="@+id/cryptBox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Crypt your mind" />
+
+            <TextView
+                android:id="@+id/nontech1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Non technical" />
+
+            <CheckBox
+                android:id="@+id/gamebox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gaming" />
+
+            <CheckBox
+                android:id="@+id/petaBox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Petapixel" />
+
+            <CheckBox
+                android:id="@+id/treasureBox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="treasurehunt" />
+
+            <CheckBox
+                android:id="@+id/memeBox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="memecreation" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_blue_light"
+        android:fontFamily="@font/nunito_bold"
+        android:text="payment"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+</RelativeLayout>

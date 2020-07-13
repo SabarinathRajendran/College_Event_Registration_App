@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sabari.hechura.events">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Choose Event" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView4"
+        android:entries="@array/eventlist" />
+
+    <ImageButton
+        android:id="@+id/qrscannerbtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/qrresultbox1"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <ImageButton
+        android:id="@+id/searchbtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/qrresultbox1"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+    <EditText
+        android:id="@+id/qrresultbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="14dp"
+        android:layout_toEndOf="@+id/qrscannerbtn1"
+        android:layout_toLeftOf="@+id/searchbtn1"
+        android:layout_toRightOf="@+id/qrscannerbtn1"
+        android:layout_toStartOf="@+id/searchbtn1"
+        android:ems="10"
+        android:hint="QR code"
+        android:inputType="textPersonName" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/qrscannerbtn1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/college4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="College"
+                android:inputType="textPersonName"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/dept4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Department"
+                android:inputType="textPersonName"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/year4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Year"
+                android:inputType="textPersonName"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/email4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/phone4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Phone number"
+                android:inputType="textPersonName"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/paymentfield1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="payment"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Technical events"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:id="@+id/paperbox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Paper Presentation" />
+
+            <CheckBox
+                android:id="@+id/bugBox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Work the bugs out of" />
+
+            <CheckBox
+                android:id="@+id/quizBox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quizoholic" />
+
+            <CheckBox
+                android:id="@+id/cryptBox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Crypt your mind" />
+
+            <TextView
+                android:id="@+id/nontech2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Non technical"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:id="@+id/gamebox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gaming" />
+
+            <CheckBox
+                android:id="@+id/petaBox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Petapixel" />
+
+            <CheckBox
+                android:id="@+id/treasureBox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="treasurehunt" />
+
+            <CheckBox
+                android:id="@+id/memeBox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="memecreation" />
+
+            <TextView
+                android:id="@+id/entry123"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Entry..."
+                android:textAlignment="center" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/colorPrimary"
+        android:text="Add to event"
+        android:textColor="@color/zxing_status_text" />
+
+
+</RelativeLayout>

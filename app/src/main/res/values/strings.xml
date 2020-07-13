@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">hechura</string>
+
+    <string-array name="eventlist">
+        <item>Paperpresentation</item>
+        <item>quiz</item>
+        <item>debugging</item>
+        <item>cryptyourmind</item>
+        <item>gaming</item>
+        <item>petapixel</item>
+        <item>treasurehunt</item>
+        <item>memecreation</item>
+    </string-array>
+</resources>
